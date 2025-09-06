@@ -29,46 +29,54 @@
     /* --------- section box -------- */
     .box {
         display: grid;
-        /* 定義兩列：第一列佔 2 份，第二列佔 1 份 */
+        
         grid-template-columns: 2fr 1fr;
-        /* 定義兩行：第一行自動調整高度，第二行自動調整高度 */
+        
         grid-template-rows: auto auto;
-        /* 設定行與列之間的間距 */
+        
         gap: 20px;
     }
 
     .top-left {
-        /* 將這個區塊放在第一行、第一列 */
+        
         grid-row: 1;
         grid-column: 1;
         background-color: #eee;
     }
 
     .top-right {
-        /* 將這個區塊放在第一行、第二列 */
+        
         grid-row: 1;
         grid-column: 2;
         background-color: #eee;
     }
-
+   
     .bottom {
-        /* 讓這個區塊橫跨兩列 */
+        
         grid-column: span 2;
-        /* 將它放在第二行 */
+        
         grid-row: 2;
   
     }
 
-    /* 為了示範效果，可以給它們一些高度 */
+    
     .top-left, .top-right {
         min-height: 200px;
+    }
+    
+    picture {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 35vh;
+    
     }
 
     .bottom {
         min-height: 150px;
     }
  
-    /* 使用 CSS Grid 實現三欄佈局 */
+    /* use CSS Grid to create 3 column */
     .course-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

@@ -1,3 +1,4 @@
+// courses array
 const courses = [
     {
         subject: 'CSE',
@@ -78,39 +79,39 @@ const courses = [
     }
 ]
 
-// 2. 獲取 HTML 元素
+// 2. get HTML elements
 const courseListContainer = document.getElementById('course-list');
 const showAllBtn = document.getElementById('showAll');
 const showWDDBtn = document.getElementById('showWDD');
 const showCSEBtn = document.getElementById('showCSE');
 
-// 新增一個顯示總學分的元素
+// Add a new element to display the total credits
 const totalCreditsDisplay = document.createElement('h3');
 totalCreditsDisplay.id = 'total-credits-display';
-totalCreditsDisplay.textContent = '總學分：0';
-courseListContainer.before(totalCreditsDisplay); // 將其放在課程列表上方
+totalCreditsDisplay.textContent = 'Total credits：0';
+courseListContainer.before(totalCreditsDisplay); 
 
-// 3. 核心功能：渲染課程到頁面
+// 3. Core function: Rendering courses to pages
 function renderCourses(courseArray) {
-    // 清空現有內容
+    // Clear existing content
     courseListContainer.innerHTML = '';
     
-    // 如果傳入的陣列是空的，顯示提示
+    // If the passed array is empty, display a prompt
     if (courseArray.length === 0) {
-        courseListContainer.innerHTML = '<p>沒有找到相關課程。</p>';
-        updateTotalCredits(0); // 更新總學分為0
+        courseListContainer.innerHTML = '<p>Not found</p>';
+        updateTotalCredits(0); // Update total credits to 0
         return;
     }
 
-    // 計算總學分並更新顯示
+    // Calculate total credits and update display
     updateTotalCredits(courseArray);
 
-    // 遍歷陣列並生成 HTML
+    // Iterate over the array and generate HTML
     courseArray.forEach(course => {
         const courseCard = document.createElement('div');
         courseCard.classList.add('course-card');
         
-        // 根據 isCompleted 屬性添加 CSS class
+        // due to attribution of "isCompleted" add CSS class
         if (course.isCompleted) {
             courseCard.classList.add('completed');
         }
@@ -126,20 +127,20 @@ function renderCourses(courseArray) {
     });
 }
 
-// 4. 新增功能：動態計算並顯示總學分
+// 4. calculate total credits
 function updateTotalCredits(courseArray) {
-    // 使用 reduce() 方法來計算總學分
+    // use reduce() method
     const totalCredits = courseArray.reduce((sum, course) => {
         return sum + course.credits;
-    }, 0); // 初始值設為 0
+    }, 0); // initial value 0
     
-    // 更新頁面上的文字
+    // Renew page content
     totalCreditsDisplay.textContent = `The total credits for course listed is ${totalCredits}`;
 }
 
-// 5. 事件監聽器：當按鈕被點擊時，執行對應的篩選邏輯
+// 5. Event listener: When the button is clicked, the corresponding filtering logic is executed
 showAllBtn.addEventListener('click', () => {
-    renderCourses(courses); // 顯示所有課程
+    renderCourses(courses); // show all courses
 });
 
 showWDDBtn.addEventListener('click', () => {
@@ -152,7 +153,7 @@ showCSEBtn.addEventListener('click', () => {
     renderCourses(filteredCourses);
 });
 
-// 6. 初始載入：頁面載入時，先顯示所有課程
+// 6. Initial load: When the page loads, all courses are displayed first
 document.addEventListener('DOMContentLoaded', () => {
     renderCourses(courses);
 });
