@@ -150,8 +150,7 @@ picture {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    height: 30vh;
-    
+    height: auto;    
 }
 img,source {
   max-width: 100%; 
