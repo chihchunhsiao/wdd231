@@ -58,7 +58,7 @@ p {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.0rem;
+    font-size: .9rem;
 }
 /* ************** HEADER ********* */
 header {
@@ -164,7 +164,6 @@ img,source {
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 20px;
     text-align: center;
-    font-size: 1.4rem;
     
 }
 
@@ -177,6 +176,7 @@ img,source {
     cursor: pointer;
     border-radius: 5px;
     height: 50px;
+    
 }
 
 .filter-buttons button:hover {
@@ -210,19 +210,17 @@ img,source {
 
 .course-title {
     margin-left: 10px;
+    color: #3D405B;    
+    margin: 0 0 10px;    
+}
+
+.course-number {
+    margin-left: 10px;
     color: #3D405B;
     font-size: 1.0em;
     margin: 0 0 10px;    
 }
 
-.course-subject {
-    font-size: 0.9em;
-    color: #555;
-    background-color: #e0e0e0;
-    display: inline-block;
-    padding: 2px 8px;
-    border-radius: 4px;
-}
 
 /* general course-card style */
 .course-card {
