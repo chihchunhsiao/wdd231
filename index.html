@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I. Chih Chun Hsiao's webpage.">
+    <meta name="author" content="Chih Chun Hsiao">
+
+    <!-- Google Font Here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Style Sheets Here -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JS Here -->
+    <script src="scripts/date.js" defer></script>    
+    <script src="scripts/navigation.js" defer></script> 
+    <script src="scripts/course.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/househeart.svg" alt="Site Logo" width="32" height="32">
+        <span>Chih Chun's Site Title</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open the main menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="box">
+            <section class="top-left">
+                <h2>About Me</h2>
+                <p>I am Chih Chun Hsiao. I am from Taiwan. I have four children. I am a research asistant in NTHU. The reason why I choose this cetificate is I want to learn some professional knowledge and skills in the programming field. My dream is to become a couple missionary with my husband after retirement. However, coding javascripts is difficult for me. I want to learn more principles and skills in this course to help me to have confidence on coding.</p>
+            </section>
+            <section class="top-right">
+                <h2>Student Photo</h2>
+                <picture>
+                    <source srcset="images/chun-large.webp" media="(min-width: 1000px)">
+                    <source srcset="images/chun-medium.webp" media="(min-width: 500px)">                                    
+                    <img src="images/chun-small.webp" alt="My Photo" width="300" height="300">
+                </picture>                
+            </section>
+            <section class="bottom">
+                <h2>Web Certificate Courses</h2>
+                    <div class="filter-buttons">
+                        <button id="showAll">All</butto>
+                        <button id="showWDD">WDD</button>
+                        <button id="showCSE">CSE</button>
+                    </div>
+
+                    <div id="course-list" class="course-grid"></div>   
+            </section>
+        </div>        
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/xiao.zhi.jun.687778" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/cc-hsiao/" target="_blank"><img src="images/linkedin.svg" alt="linked in" width="16" height="16"></a>
+            <a href="https://github.com/chihchunhsiao" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+        </div>
+        <p><span id="currentyear"></span></p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/navigation.js"></script>
+</body>
+</html>
