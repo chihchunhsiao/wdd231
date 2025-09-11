@@ -112,7 +112,7 @@ function renderCourses(courseArray) {
         courseCard.classList.add('course-card');
         
         // due to attribution of "isCompleted" add CSS class
-        if (course.isCompleted) {
+        if (course.completed) {
             courseCard.classList.add('completed');
         }
         

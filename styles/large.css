@@ -13,17 +13,23 @@
     }
 
     .navigation {
-    display: flex;
-    border-bottom: solid 1px #eee;
+        display: flex;
+        border-bottom: solid 1px #eee;
+        justify-content: flex-end; /* Align content to the right */
 
     }
 
     .navigation ul {
-    display: flex;
+        display: flex;
+        margin: 0;
+        padding: 0 20px; 
     }
 
+    .navigation li {
+        margin-left: 30px; /* Control the spacing between each link */
+    }
     .navigation a {
-    border: none;
+        border: none;
     }
 
     /* --------- section box -------- */
@@ -65,11 +71,11 @@
     }
     
     picture {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: auto;
-    
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: auto;
+        
     }
 
     .bottom {
@@ -78,8 +84,8 @@
  
     /* use CSS Grid to create 3 column */
     .course-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
 }

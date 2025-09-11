@@ -230,10 +230,12 @@ img,source {
     overflow: hidden; /* tip：hide content overflow the border */
 }
 
+/* define different color for completed */
 /* completed course-card style */
 .course-card.completed {
     border-color: #4CAF50; 
     background-color: #f0fff0; 
+    content: '✅';
 }
 
 /* show「✅completed」tag style */
