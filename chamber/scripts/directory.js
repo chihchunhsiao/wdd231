@@ -40,7 +40,7 @@ const displayMembers = (members) => {
         // Build the image portrait by setting all the relevant attributes
         image.setAttribute('src', `images/${member.image}`);
         image.setAttribute('alt', `Image of ${member.fieldsnames}`); 
-        // image.setAttribute('loading', 'lazy');
+        image.setAttribute('fetchpriority', 'high');
         image.setAttribute('width','400');
         image.setAttribute('height', '300');
 
