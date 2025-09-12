@@ -1,0 +1,192 @@
+/* -------- COLOR SCHEME --------- 
+terra cotta #E07A5F
+deep slate blue #3D405B,
+*/
+
+/* --------- Font --------
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+} */
+
+/* ************** Header *********** */
+header span {
+
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2rem;
+
+}
+
+head img {
+    justify-content: center;
+    
+}
+
+/* ************** HAMBURGER ********* */
+.hamburger {
+    background: none;
+    border: none;
+    color: #3D405B;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+    
+}
+
+/* ************** NAVIGATION ********* */
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: black;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.3rem;
+
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: lightgreen;
+}
+
+/* section */
+.grid {
+	display: grid;
+	grid-gap: 1.0rem;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.grid section {	
+	padding: 0.15rem;
+	background-color: #ACC8E5;
+	border: 1px solid rgb(0 0 0 / 10%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    border-radius: 3px;
+}
+
+.grid section p {	
+	font-size: 1.2rem;
+	text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 5px 1px;
+}
+
+.grid img {
+	width: auto;
+	
+	box-shadow: 0 0 10px #777;
+	height: 200px;
+	border: 1px solid #111;
+    margin: 10px 2px;
+}
+
+/* List style */
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin: 0;
+		padding: 0.25rem;
+}
+
+.list img {
+	display: none;
+}
+
+
+/* ************** FOOTER ********* */
+
+footer {
+
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: left;
+}
+
+footer section {
+    padding: 10px 0;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px; 
+    border-radius: 22px; 
+}
+
+.social img {
+    width: 30px;
+    height: 30px
+}
+.social a:hover {
+    background-color: #ddd;
+}
+
+footer span {
+    font-size: .9rem;
+}
+
+footer h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2rem;
+}

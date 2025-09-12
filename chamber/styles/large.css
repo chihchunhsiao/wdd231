@@ -1,0 +1,54 @@
+@media only screen and (min-width: 32rem) {
+    header, main, nav, footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+    display: none;
+    }
+
+    .navigation {
+        display: flex;
+        border-bottom: solid 1px #eee;
+        justify-content: flex-end; /* Align content to the right */
+        
+    }
+
+    .navigation ul {
+        display: flex;
+        margin: 0;
+        padding: 0 20px; 
+    }
+
+    .navigation li {
+        margin-left: 30px; /* Control the spacing between each link */
+    }
+    .navigation a {
+        border: none;
+    }
+
+    /* --------- section box -------- */
+
+ 
+    /* use CSS Grid to create 3 column */
+
+    .cards {
+	display: grid;
+	grid-gap: 1.0rem;
+	grid-template-columns: 1fr 1fr 1fr; 
+    }
+
+
+    footer {
+        display: grid;    
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-gap: 20px; 
+        padding: 20px;
+    }
+
+}

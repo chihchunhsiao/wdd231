@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hsinchu Chamber of Commerce Directory Page</title>
+        <meta name="description" content="Hsinchu Chamber of Commerce Directory Page.">
+        <meta name="author" content="Chih Chun Hsiao">
+
+        <!-- Google Font Here -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!-- Style Sheets Here -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/large.css">
+
+        <!-- JS Here -->
+        <script src="scripts/date.js" defer></script>    
+        <script src="scripts/navigation.js" defer></script> 
+        <script src="scripts/directory.js" defer></script> 
+
+        <!-- Favicon -->
+        <link rel="icon" href="hsinchu.ico">
+
+        <!-- Social Media Meta -->
+        <meta property="og:title" content="Hsinchu Chamber of Commerce Directory Page">
+        <meta property="og:description" content="Explore Hsinchu City's most comprehensive business directory! Easily search and find the local businesses, restaurants, shops, and professional services you need.">
+        <meta property="og:image" content="https://drive.google.com/file/d/1IaULfss6nUGs0tC8MSG3uP6r0xKi804F/view?usp=sharing"/>
+        <meta property="og:url" content="https://drive.google.com/file/d/1IaULfss6nUGs0tC8MSG3uP6r0xKi804F/view?usp=sharing">
+
+    </head>
+    <body>
+        <header>
+            <img src="images/hsinchu.svg" alt="Site Logo" width="32" height="32">
+            <span>Shinchu Chamber of Commerce</span>
+            <button id="ham-btn" class="hamburger" aria-label="Open the main menu"></button>
+        </header>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Chamber of Commerce Directory</h1>
+            <div class="menu">
+                <button id="gridButton">Grid</button>
+                <button id="listButton">List</button>
+            </div>   
+            <article class="grid">
+                <div id="cards" class="cards"></div>
+            </article>
+            
+    
+        </main>
+        <footer>
+            <section>
+                <div>
+                    <h3>Hsinchu Chamber of Commerce</h3>
+                    <p>Address: No. 1, Sec. 1, Guangfu Rd., East Dist., Hsinchu</p>
+                    <p>Phone: (03) 1234-5678</p>
+                    <p>Email: hisnchucc@email.com</p>
+                </div>
+            </section>
+            <section>
+                <div class="social">
+                <a href="https://www.facebook.com/xiao.zhi.jun.687778" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+                <a href="https://www.linkedin.com/in/cc-hsiao/" target="_blank"><img src="images/linkedin.svg" alt="linked in" width="16" height="16"></a>
+                <a href="https://github.com/chihchunhsiao" target="_blank"><img src="images/githubicon.svg" alt="githubicon" width="16" height="16"></a>
+                </div>                
+            </section>
+            <section>
+                <div>                    
+                    <p>WDD231 Class Project</p>
+                    <p>Chih-Chun Hsiao</p>                    
+                    <p><span id="currentyear"></span></p>
+                    <p><span id="lastModified"></span></p>
+                </div>
+            </section>
+            
+        </footer>
+    </body>
+</html>
