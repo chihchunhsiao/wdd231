@@ -5,7 +5,7 @@
     "address": "123 Main Street, Anytown, Hsinchu, Taiwan",
     "phonenumber": "555-123-4567",
     "websiteurl": "https://www.google.com/search?q=https://www.greenvalleyfarm.com",
-    "image": "green-valley-farm.png",
+    "image": "green-valley-farm.webp",
     "membershiplevel": 3,
     "email": "info@greenvalleyfarm.com"
     },
@@ -14,7 +14,7 @@
     "address": "456 Tech Avenue, Metropolis, Hsinchu, Taiwan",
     "phonenumber": "555-987-6543",
     "websiteurl": "https://www.innovatetech.com",
-    "image": "innovate-tech.png",
+    "image": "innovate-tech.webp",
     "membershiplevel": 2,
     "email": "contact@innovatetech.com"
     },
@@ -23,7 +23,7 @@
     "address": "789 Harbor View, Coastville, Hsinchu, Taiwan",
     "phonenumber": "555-222-3333",
     "websiteurl": "https://www.blueskyrealty.net",
-    "image": "blue-sky-re.png",
+    "image": "blue-sky-re.webp",
     "membershiplevel": 1,
     "email": "sales@blueskyrealty.net"
     },
@@ -32,7 +32,7 @@
     "address": "101 Fit Lane, Metropolis, Hsinchu, Taiwan",
     "phonenumber": "555-444-5555",
     "websiteurl": "https://www.urbanfitness.com",
-    "image": "urban-fitness.png",
+    "image": "urban-fitness.webp",
     "membershiplevel": 2,
     "email": "info@urbanfitness.com"
     },
@@ -41,7 +41,7 @@
     "address": "202 Brew Street, Anytown, Hsinchu, Taiwan",
     "phonenumber": "555-666-7777",
     "websiteurl": "https://www.google.com/search?q=https://www.cornerstonecoffee.com",
-    "image": "cornerstone-coffee.png",
+    "image": "cornerstone-coffee.webp",
     "membershiplevel": 1,
     "email": "hello@cornerstonecoffee.com"
     },
@@ -50,7 +50,7 @@
     "address": "303 Market Street, Metropolis, Hsinchu, Taiwan",
     "phonenumber": "555-888-9999",
     "websiteurl": "https://www.summitfinancial.com",
-    "image": "summit-financial.png",
+    "image": "summit-financial.webp",
     "membershiplevel": 3,
     "email": "contact@summitfinancial.com"
     },
@@ -59,7 +59,7 @@
     "address": "404 Art Circle, Coastville, Hsinchu, Taiwan",
     "phonenumber": "555-111-2222",
     "websiteurl": "https://www.google.com/search?q=https://www.creativedigital.co",
-    "image": "creative-digital.png",
+    "image": "creative-digital.webp",
     "membershiplevel": 2,
     "email": "info@creativedigital.co"
     }
