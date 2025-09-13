@@ -41,8 +41,8 @@ const displayMembers = (members) => {
         image.setAttribute('src', `images/${member.image}`);
         image.setAttribute('alt', `Image of ${member.fieldsnames}`); 
         // image.setAttribute('fetchpriority', 'high');
-        image.setAttribute('width','400');
-        image.setAttribute('height', '300');
+        image.setAttribute('width','267');
+        image.setAttribute('height', '201');
 
         // Build the p content out to show the member's address/phonenumber/websiteurl/membershiplevel/email
 
