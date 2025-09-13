@@ -51,29 +51,15 @@
     padding-top: 10px;
     padding-bottom: 10px;
     }
-
-    .list {
 	
-	section {
+	.list section {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		margin: 0;
+		margin: 1px 0;
 		padding: 0.25rem;
 
-		& > * {
-			margin: 0 1rem;
-		}
-
-		img {
-			display: none;
-		}
-
-		h3 {
-			font-size: 1rem;
-		}
-
 	}
-}
+   
 
     footer {
         display: grid;    
