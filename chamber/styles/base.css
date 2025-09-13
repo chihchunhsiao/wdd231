@@ -1,7 +1,10 @@
-/* -------- COLOR SCHEME --------- 
-terra cotta #E07A5F
-deep slate blue #3D405B,
+/* ----- Color Scheme ------
+background: #B4BEC9 (gray)
+header/footer background: #159A9C (blue); font color: black
+navigation background: #002333 (dark blue); font color:#FFFFFF (white)
+other: #DEEFE7 (light blue)
 */
+
 
 /* --------- Font --------
 .lato-light {
@@ -17,18 +20,30 @@ deep slate blue #3D405B,
 } */
 
 /* ************** Header *********** */
-header span {
 
+header {
+    background-color: #DEEFE7;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: left;
+}
+h1 {
+    padding: 10px;
+}
+
+header span, button {
+    
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 1.2rem;
-
+    
 }
 
-head img {
+header img {
     justify-content: center;
-    
+    height: auto;
+    width:auto;
 }
 
 /* ************** HAMBURGER ********* */
@@ -38,8 +53,6 @@ head img {
     color: #3D405B;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-
 }
 
 .hamburger::after {
@@ -56,6 +69,7 @@ head img {
 
 .navigation {
     display: none;
+    background: #002333;
 }
 
 .navigation.show {
@@ -71,7 +85,7 @@ head img {
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    color: black;
+    color: #FFFFFF;
     text-decoration: none;
     border-bottom: solid 1px #ddd;
     font-family: "Lato", sans-serif;
@@ -86,24 +100,58 @@ head img {
 }
 
 .navigation a:hover {
-    background-color: lightgreen;
+    background-color: #159A9C;
+}
+
+/* Grid & List button */
+.menu {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    background-color: #DEEFE7;
+}
+
+.menu button {
+    padding:5px;
+    margin:5px;
+    font-size: 1.0rem;
+    background-color: #DEEFE7;
+    
+}
+
+.menu-btn {
+  background-color: #DEEFE7;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s; 
+}
+
+.menu-btn.current {
+  background-color: #DEEFE7;
+}
+
+.menu-btn:hover {
+  background-color: #159A9C;
+  color: white; 
 }
 
 /* section */
 .grid {
 	display: grid;
 	grid-gap: 1.0rem;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   
 }
 
 .grid section {	
 	padding: 0.15rem;
-	background-color: #ACC8E5;
+	background-color: #002333;
 	border: 1px solid rgb(0 0 0 / 10%);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
     border-radius: 3px;
+    color: #FFFFFF;
 }
 
 .grid section p {	
@@ -113,11 +161,11 @@ head img {
     font-weight: 300;
     font-style: normal;
     margin: 5px 1px;
+    
 }
 
 .grid img {
 	width: auto;
-	
 	box-shadow: 0 0 10px #777;
 	height: 200px;
 	border: 1px solid #111;
@@ -126,15 +174,17 @@ head img {
 
 /* List style */
 .list {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr;
+    display: flex;
 	flex-direction: column;
 }
 
 .list section {
-		display: grid;
-		grid-template-columns: 1fr;
-		margin: 0;
-		padding: 0.25rem;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0.25rem;
+    background-color: #002333;
 }
 
 .list img {
@@ -142,11 +192,21 @@ head img {
 }
 
 
+/* cards */
+.cards {
+    display: grid;
+	grid-gap: 1.0rem;
+	grid-template-columns: 1fr;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+	 
+
 /* ************** FOOTER ********* */
 
 footer {
 
-    background-color: #eee;
+    background-color: #DEEFE7;
     padding: 1rem 10px;
     text-align: left;
 }
@@ -177,7 +237,7 @@ footer section {
     height: 30px
 }
 .social a:hover {
-    background-color: #ddd;
+    background-color: #159A9C;
 }
 
 footer span {
