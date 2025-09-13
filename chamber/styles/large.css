@@ -32,24 +32,19 @@
         border: none;
     }
 
-    /* --------- section box -------- */
-
-    /* use CSS Grid to create 3 column */
+    /* --------- Direcotry -------- */
 
    .grid .cards {
     display: grid;
 	grid-gap: 1.0rem;
 	grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 10px;
-    padding-bottom: 10px;
     }
 
     .list .cards {
 	display: grid;
 	grid-gap: 1.0rem;
 	grid-template-columns: 1fr; 
-    padding-top: 10px;
-    padding-bottom: 10px;
+    /
     }
 	
 	.list section {
@@ -57,7 +52,6 @@
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		margin: 1px 0;
 		padding: 0.25rem;
-
 	}
    
 

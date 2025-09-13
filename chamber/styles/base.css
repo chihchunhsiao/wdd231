@@ -18,6 +18,13 @@ other: #DEEFE7 (light blue)
   font-weight: 700;
   font-style: normal;
 } */
+/**************** Body ************ */
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+}
 
 /* ************** Header *********** */
 
@@ -27,8 +34,11 @@ header {
     padding-bottom: 30px;
     text-align: left;
 }
-h1 {
-    padding: 10px;
+h1, h2 {
+    padding: 5px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 header span, button {
@@ -101,6 +111,7 @@ header img {
 
 .navigation a:hover {
     background-color: #159A9C;
+    color: black;
 }
 
 /* Grid & List button */
@@ -132,7 +143,7 @@ header img {
 
 .menu-btn:hover {
   background-color: #159A9C;
-  color: white; 
+  
 }
 
 /* section */
@@ -154,7 +165,7 @@ header img {
     color: #FFFFFF;
 }
 
-.grid section p {	
+.grid p {	
 	font-size: 1.2rem;
 	text-align: center;
     font-family: "Lato", sans-serif;
@@ -192,14 +203,14 @@ header img {
 }
 
 
-/* cards */
+/* cards*/
 .cards {
     display: grid;
 	grid-gap: 1.0rem;
 	grid-template-columns: 1fr;
     padding-top: 10px;
     padding-bottom: 10px;
-}
+} 
 	 
 
 /* ************** FOOTER ********* */
