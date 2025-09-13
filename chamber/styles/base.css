@@ -29,6 +29,7 @@ body {
 /* ************** Header *********** */
 
 header {
+    position: relative;
     background-color: #DEEFE7;
     padding-top: 20px;
     padding-bottom: 30px;
@@ -39,6 +40,7 @@ h1, h2 {
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
+    font-size: 1.3rem;
 }
 
 header span, button {
@@ -46,7 +48,7 @@ header span, button {
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     
 }
 
@@ -54,10 +56,14 @@ header img {
     justify-content: center;
     height: auto;
     width:auto;
+
 }
 
 /* ************** HAMBURGER ********* */
 .hamburger {
+    position:absolute;
+    top: 20px;
+    right: 20px;
     background: none;
     border: none;
     color: #3D405B;
@@ -150,8 +156,8 @@ header img {
 .grid {
 	display: grid;
 	grid-gap: 1.0rem;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-   
+	/* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    
 }
 
 .grid section {	
@@ -163,10 +169,11 @@ header img {
 	align-items: center;
     border-radius: 3px;
     color: #FFFFFF;
+    width: auto;
 }
 
 .grid p {	
-	font-size: 1.2rem;
+	font-size: 1.0rem;
 	text-align: center;
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -176,7 +183,7 @@ header img {
 }
 
 .grid img {
-	width: auto;
+	max-width: 320px;
 	box-shadow: 0 0 10px #777;
 	height: 200px;
 	border: 1px solid #111;
@@ -193,7 +200,7 @@ header img {
 
 .list section {
     color: #FFFFFF;
-    margin: 0;
+    margin: 1px;
     padding: 0.25rem;
     background-color: #002333;
 }
@@ -219,11 +226,12 @@ footer {
 
     background-color: #DEEFE7;
     padding: 1rem 10px;
-    text-align: left;
+    text-align: center;
 }
 
 footer section {
     padding: 10px 0;
+   
 }
 
 .social {
@@ -259,5 +267,5 @@ footer h3 {
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
