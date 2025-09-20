@@ -20,7 +20,10 @@
         <!-- JS Here -->
         <script src="scripts/date.js" defer></script>    
         <script src="scripts/navigation.js" defer></script> 
-        <script src="scripts/directory.js" defer></script> 
+        <script src="scripts/currentweather.js" defer></script> 
+        <script src="scripts/weatherfore.js" defer></script> 
+        <script src="scripts/home.js" defer></script> 
+
 
         <!-- Favicon -->
         <link rel="icon" href="hsinchu.ico">
@@ -47,7 +50,53 @@
             </ul>
         </nav>
         <main>
-             <h1>About Hsinchu Chamber of Commerce</h1>
+            <nav class="call">
+                    <ul>
+                        <li><a href="join.html">Join Us</a></li>
+                    </ul>
+                </nav>
+            <div class="hero">                
+                <picture>               
+                    <source srcset="images/hsinchu-1200x800.webp" media="(min-width: 1000px)" width="1200" height="800"> 
+                    <source srcset="images/hsinchu-600x400.webp" media="(min-width: 500px)" width="600" height="400">                                  
+                    <img src="images/hsinchu-450x300.webp" alt="Hsinchu train station" width="450" height="300">
+                </picture>
+                
+            </div> 
+            <h1>About Hsinchu Chamber of Commerce</h1>
+            <div class="event-grid">
+                <sectoin class="events">
+                    <h2>Events</h2> 
+                    <p>Join the Hsinchu Chambers of Commerce for our annual networking gala, a premier event dedicated to fostering connections and driving economic growth within our vibrant city. This year, we invite local business leaders, innovators, and entrepreneurs to engage in meaningful conversations, share valuable insights, and forge strategicpartnerships. Don't miss this chance to expand your professional circle and contribute to the collective success of Hsinchu's business community. We look forward to seeing you at Hsinchu Train Station Sqaure on 4 Oct at 6 pm.</p>
+
+                </sectoin>
+                <section id="currentweather">
+                    <h2>Current Weather</h2>
+                    <div class="weather-cards">
+                        
+                        <figure>
+                            <img id="weather-icon" src="" alt="">
+                            
+                            <p id="current-temp"></p>
+                            <figcaption></figcaption>
+                        </figure>
+
+                </section>
+                <section id="weatherfore">
+                    <h2>Weather Forecast</h2>
+                    <p id="today"></p>
+                    <p id="tomorrow"></p>
+                    <p id="intwodays"></p>
+
+                </section>
+            </div>
+
+            <h2 class="spotlight">Spotlight Business</h2>
+            <article class="member-grid">
+                
+                <div id="member-cards" class="member-cards"></div>
+            </article> 
+
         </main>
 
         <footer>

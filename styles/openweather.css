@@ -1,0 +1,44 @@
+h1 {
+    background-color: #eee;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+p {
+    font-size: 1.5rem;
+    
+    margin: .3rem 0;
+}
+.cards {
+    border: 1px solid #5d6f67;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cards h2 {
+    color: #3a5250;
+    margin: .3rem 0;
+}
+
+.cards figcaption {
+    text-transform: capitalize;
+    color: #3a5250;
+    margin: .3rem 0;
+}
+
+
+#current-temp {
+    font-size: 2rem;
+    color: #537279;
+    margin: .3rem 0;
+}
+
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+

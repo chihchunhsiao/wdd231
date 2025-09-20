@@ -41,6 +41,11 @@ h1, h2 {
     font-weight: 700;
     font-style: normal;
     font-size: 1.3rem;
+    
+}
+
+h2 {
+    text-align: center;
 }
 
 header span, button {
@@ -58,6 +63,101 @@ header img {
     width:auto;
 
 }
+/* ------------ Hero ------------ */
+.hero {
+position: relative;
+margin: 0 auto;
+
+}
+/* Ensure the nav is absolutely positioned over the hero */
+.call {
+position: absolute;
+top: 21rem;
+left: 50%;
+transform: translateX(-50%);
+z-index: 999; /* set highest level to float on the hero image */
+}
+/* Style the list item and link */
+.call ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.call a {
+display: inline-block;
+padding: 0.75rem 2rem;
+background-color: #2563eb; /* Tailwind's blue-500 */
+color: white;
+font-weight: 700;
+border-radius: 9999px; /* Tailwind's rounded-full */
+text-decoration: none;
+transition-property: background-color, transform;
+transition-duration: 300ms;
+}
+.call a:hover {
+background-color: #159A9C; /* Tailwind's blue-600 */
+transform: scale(1.05);
+}
+
+/* ***************Event Grid************* */
+.event-grid {
+	display: grid;
+	grid-gap: 1.0rem;
+	/* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    
+}
+
+.event-grid section {	
+	padding: 0.15rem;
+	background-color: #159A9C;
+	border: 1px solid rgb(0 0 0 / 10%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    border-radius: 3px;
+    color: black;
+    width: auto;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.0rem;
+}
+
+.event-grid p {	
+	font-size: 1.0rem;
+	text-align: left;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 10px;
+    
+}
+
+.event-grid img {
+	max-width: auto;
+	height: auto;
+	border: 2px solid #111;
+    background-color: #DEEFE7;
+}
+
+figcaption {
+    text-transform: capitalize;
+
+}
+
+.events {
+    padding: 0.15rem;
+	background-color: #159A9C;
+	border: 1px solid rgb(0 0 0 / 10%);
+    color: black;
+}
+
+.member-grid {
+    display: flex;
+}
+
+
+
 
 /* ************** HAMBURGER ********* */
 .hamburger {
@@ -217,8 +317,49 @@ header img {
 	grid-template-columns: 1fr;
     padding-top: 10px;
     padding-bottom: 10px;
-} 
-	 
+}
+
+/************** Spotlight Business **************/
+.spotlight {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    background-color: #DEEFE7;
+    padding: 20px;
+}
+
+.member-grid {
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+  background-color: white;
+  color: #FFFFFF;
+}
+
+.member-grid section {
+    padding: 0.15rem;
+	background-color: #002333;
+	border: 1px solid rgb(0 0 0 / 10%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    border-radius: 3px;
+    color: #FFFFFF;
+    width: auto;
+    margin: 5px;
+}
+
+.member-grid p {	
+	font-size: 1.0rem;
+	text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 5px 1px;
+    
+}
 
 /* ************** FOOTER ********* */
 

@@ -18,7 +18,7 @@
     .navigation {
         display: flex;
         border-bottom: solid 1px #eee;
-        justify-content: flex-end; /* Align content to the right */
+        justify-content: right; /* Align content to the right */
         
     }
 
@@ -35,6 +35,13 @@
         border: none;
     }
 
+    /* ---------- Hero ------------- */
+    
+    .call {
+    top: 25rem;
+    left: 70%;
+    }
+
     /* --------- Direcotry -------- */
 
    .grid .cards {
@@ -49,8 +56,31 @@
 		margin: 1px 0;
 		padding: 0.25rem;
 	}
-   
 
+    /* ---------- Home ----------- */
+    .event-grid {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+		margin: 1px 0;
+		padding: 0.25rem;
+        
+    }
+
+    .events {
+        grid-column: span 2;
+        max-width: 600px;
+    }
+
+
+    
+    .member-grid .member-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    
+   
+    /* ---------- Footer -------- */
     footer {
         display: grid;    
         grid-template-columns: 1fr 1fr 1fr; 

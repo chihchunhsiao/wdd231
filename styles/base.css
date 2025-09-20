@@ -293,3 +293,12 @@ footer {
 footer span {
     font-size: .9rem;
 }
+
+/* The comment below is used to
+   disable specific styling */
+/*
+span {
+  color: blue;
+  font-size: 1.5em;
+}
+*/

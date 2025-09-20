@@ -22,7 +22,7 @@ async function getMembers(membersURL) {
 } 
 
 
-// Call the function getProphetData() in the main line of your .js code to test the fetch and response.
+// Call the function getMembers() in the main line of your .js code to test the fetch and response.
 getMembers(membersURL);
 
 // Second Part

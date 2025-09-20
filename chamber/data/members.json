@@ -6,7 +6,7 @@
     "phonenumber": "555-123-4567",
     "websiteurl": "https://www.google.com/search?q=https://www.greenvalleyfarm.com",
     "image": "green-valley-farm.webp",
-    "membershiplevel": 3,
+    "membershiplevel": "Bronze",
     "email": "info@greenvalleyfarm.com"
     },
     {
@@ -15,7 +15,7 @@
     "phonenumber": "555-987-6543",
     "websiteurl": "https://www.innovatetech.com",
     "image": "innovate-tech.webp",
-    "membershiplevel": 2,
+    "membershiplevel": "Silver",
     "email": "contact@innovatetech.com"
     },
     {
@@ -24,7 +24,7 @@
     "phonenumber": "555-222-3333",
     "websiteurl": "https://www.blueskyrealty.net",
     "image": "blue-sky-re.webp",
-    "membershiplevel": 1,
+    "membershiplevel": "Gold",
     "email": "sales@blueskyrealty.net"
     },
     {
@@ -33,7 +33,7 @@
     "phonenumber": "555-444-5555",
     "websiteurl": "https://www.urbanfitness.com",
     "image": "urban-fitness.webp",
-    "membershiplevel": 2,
+    "membershiplevel": "Silver",
     "email": "info@urbanfitness.com"
     },
     {
@@ -42,7 +42,7 @@
     "phonenumber": "555-666-7777",
     "websiteurl": "https://www.google.com/search?q=https://www.cornerstonecoffee.com",
     "image": "cornerstone-coffee.webp",
-    "membershiplevel": 1,
+    "membershiplevel": "Gold",
     "email": "hello@cornerstonecoffee.com"
     },
     {
@@ -51,7 +51,7 @@
     "phonenumber": "555-888-9999",
     "websiteurl": "https://www.summitfinancial.com",
     "image": "summit-financial.webp",
-    "membershiplevel": 3,
+    "membershiplevel": "Bronze",
     "email": "contact@summitfinancial.com"
     },
     {
@@ -60,7 +60,7 @@
     "phonenumber": "555-111-2222",
     "websiteurl": "https://www.google.com/search?q=https://www.creativedigital.co",
     "image": "creative-digital.webp",
-    "membershiplevel": 2,
+    "membershiplevel": "Silver",
     "email": "info@creativedigital.co"
     }
     ]
