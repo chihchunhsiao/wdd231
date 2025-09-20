@@ -80,8 +80,7 @@ function displayWeather(forecasts) {
         const cardHTML = `
             <div class="card">
                 <h3>${date}</h3>
-                <p>High: ${maxTemp}°F, Low: ${minTemp}°F</p>
-                
+                <p>High: ${maxTemp}°F, Low: ${minTemp}°F</p>               
             </div>
             `;
         weatherContainer.innerHTML += cardHTML;
