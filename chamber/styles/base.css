@@ -134,7 +134,6 @@ transform: scale(1.05);
 }
 
 .event-grid img {
-	max-width: auto;
 	height: auto;
 	border: 2px solid #111;
     background-color: #DEEFE7;
