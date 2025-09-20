@@ -35,7 +35,7 @@ apiFetch();
 
 function displayResults(data) {
     // console.log('Hello');     
-    currentTemp.innerHTML = `${data.main.temp} &deg;F`;
+    currentTemp.innerHTML = `${Math.floor(data.main.temp)} &deg;F`;
     // copy the icon url from Weather Conditions website and instead "10d" and insert "${data.weather[0].icon}" between the /wn/ ... @2x.png
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     // use variable desc to define the weather description

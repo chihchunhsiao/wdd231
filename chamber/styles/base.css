@@ -1,5 +1,5 @@
 /* ----- Color Scheme ------
-background: #B4BEC9 (gray)
+background: #F5F5F5 (lightgray)
 header/footer background: #159A9C (blue); font color: black
 navigation background: #002333 (dark blue); font color:#FFFFFF (white)
 other: #DEEFE7 (light blue)
@@ -106,11 +106,13 @@ transform: scale(1.05);
 	/* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
     
 }
-
+.event-grid h2 {
+    color: #002333;
+}
 .event-grid section {	
 	padding: 0.15rem;
-	background-color: #159A9C;
-	border: 1px solid rgb(0 0 0 / 10%);
+	background-color: #F5F5F5;
+    border: 1px solid black;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
