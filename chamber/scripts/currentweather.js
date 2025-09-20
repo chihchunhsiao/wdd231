@@ -40,8 +40,8 @@ function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     // use variable desc to define the weather description
     let desc = data.weather[0].description;
-    weatherIcon.setAttribute('SRC', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
+    weatherIcon.setAttribute('src', `${iconsrc}`);
+    weatherIcon.setAttribute('alt', `${desc}`);
     captionDesc.textContent = `${desc}`;
     captionDesc.innerHTML =data.weather[0].description;
 }
