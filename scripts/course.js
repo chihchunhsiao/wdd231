@@ -1,4 +1,4 @@
-// courses array
+// 1. courses array
 const courses = [
     {
         subject: 'CSE',
@@ -157,3 +157,27 @@ showCSEBtn.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', () => {
     renderCourses(courses);
 });
+
+// 7. Use dialog to show course details
+let courseDetails = document.getElementById('course-details');
+
+function displayCourseDetails(course) {
+    // clear courseDetails element
+    courseDetails.innerHTML = '';
+    // Due to the technology is an Array, we use joun(',') method to let the element and space to connect to be a single string
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+  
+    closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
+}
+

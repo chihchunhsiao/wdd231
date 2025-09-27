@@ -71,7 +71,11 @@
         max-width: 600px;
     }
 
-
+    /* -------------Join---------- */
+    .join {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     
     .member-grid .member-cards {
         display: grid;

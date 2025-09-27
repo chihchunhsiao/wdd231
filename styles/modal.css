@@ -1,0 +1,90 @@
+::backdrop {
+  background-color:rgba(255, 128, 0, 0.5);
+}
+
+#openButton {
+  background-color: aqua;
+}
+
+#dialogBox {
+  background-color: lavender;
+}
+
+#closeButton {
+  background-color: violet;
+}
+
+ @keyframes background-color-change {
+            0% {
+                background-color: #ccc; /* 灰色 */
+            }
+            100% {
+                background-color: #3498db; /* 藍色 */
+            }
+        }
+
+        /* 2. 定義卡片顯現動畫 */
+        @keyframes card-fade-in {
+            0% {
+                opacity: 0;
+                transform: translateY(20px); /* 略微向上移動 */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 3. 容器樣式與應用背景動畫 */
+        body {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            transition: background-color 2s ease-in-out; /* 可選：讓背景顏色變化平滑 */
+            
+            /* 應用背景顏色動畫 */
+            animation: background-color-change 2s ease-in-out forwards; 
+        }
+
+        .card-grid {
+            diplay: grid;
+          grid-template-columns: 1fr;
+            gap: 20px; /* 卡片間距 */
+        }
+
+        /* 4. 卡片基礎樣式 */
+        .membership-card {
+            width: 150px;
+            height: 100px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            
+            /* 應用卡片顯現動畫 */
+            animation: card-fade-in 0.6s ease-out forwards;
+            opacity: 0; /* 初始隱藏 */
+            
+            /* 確保動畫結束時保持最終狀態 (opacity: 1) */
+            animation-fill-mode: forwards;
+        }
+
+        /* 5. 實現漸進顯現：使用 :nth-child() 設置不同的延遲時間 */
+        .card:nth-child(1) {
+            animation-delay: 0.5s; /* 第一張卡片延遲 0.5 秒開始 */
+        }
+
+        .card:nth-child(2) {
+            animation-delay: 0.8s; /* 第二張卡片延遲 0.8 秒開始 */
+        }
+
+        .card:nth-child(3) {
+            animation-delay: 1.1s; /* 第三張卡片延遲 1.1 秒開始 */
+        }
+
+        .card:nth-child(4) {
+            animation-delay: 1.4s; /* 第四張卡片延遲 1.4 秒開始 */
+        }

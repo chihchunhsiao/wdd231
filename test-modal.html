@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I. Chih Chun Hsiao's webpage.">
+    <meta name="author" content="Chih Chun Hsiao">
+
+    <!-- Google Font Here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Style Sheets Here -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/modal.css">
+
+    <!-- JS Here -->
+    <script src="scripts/date.js" defer></script>    
+    <script src="scripts/navigation.js" defer></script> 
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Social Media Meta -->
+    <meta property="og:title" content="Chih Chun's website">
+    <meta property="og:description" content="Learn Chih-Chun's story, and how she created personal value through BYUI's Web Computer Programming online course">
+    <meta property="og:image" content="https://drive.google.com/file/d/1w9YsM8gqUDUPZfXTURSFbBkbNphjNFBi/view?usp=sharing"/>
+    <meta property="og:url" content="https://drive.google.com/file/d/1w9YsM8gqUDUPZfXTURSFbBkbNphjNFBi/view?usp=sharing">
+
+</head>
+<body>
+    <main>
+    <header>
+        <img src="images/househeart.svg" alt="Site Logo" width="32" height="32">
+        <span>Chih Chun's Site</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open the main menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="final.html">Final</a></li>
+        </ul>
+    </nav>
+                <div>
+                <h2>Membership Application Form</h2>
+                <form id="submissionForm" method="GET" action="thanks.html" class="form">
+                    
+                    <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                    <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                    <label for="org-title">Title 
+                        <input type="text" id="org-title" name="organization-title" title="Please enter your job title. It must contain only English letters, hyphens and spaces and must be at least 7 characters." pattern="[A-Za-z\s-{7,}]" required autocomplete="organizational-title">
+                        <span id="error-message"></span></label>
+                    <label>Cell Phone <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+                    <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+                    <label>Organization <input type="text" name="organization" required autocomplete="organizational-name" title="Organization Name"></label>
+                    <label for="bussiness-description">Bussiness Description <textarea name="bussiness-description" title="Your Business Description" rows="3"></textarea></label>
+
+                    <h3>Membership Level</h3>
+                    <label><input type="radio" name="membership" value="Non-Profit" checked> Non Profit Membership </label>
+                    <label><input type="radio" name="membership" value="Bronze"> Bronze Membership </label>
+                    <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+                    <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+                    <input type="hidden" id="formLoadTime" name="formLoadTime" value="">
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+    <div class="card-grid">
+        <h1>Reuse one dialog over and over</h1>
+        <div class="membership-card" data-id="nonProfit">
+        <h2>Non Profit Memebership</h2>
+            <button id="openButton1">Learn More</button></div>
+        <div class="membership-card" data-id="bronze">
+        <h2>Bronze Membership</h2>
+        <button id="openButton2">Learn More</button></div>
+        <div class="membership-card" data-id="silver">
+        <h2>Silver Membership</h2>
+        <button id="openButton3">Learn More</button></div>
+        <div class="membership-card" data-id="gold">
+        <h2>Gold Membership</h2>
+        <button id="openButton4">Learn More</button></div>
+        <dialog id="dialogBox">
+        <!--     <p>Additional informaiton about this topic</p> -->
+            <div></div>
+            <button id="closeButton">Close</button>
+        </dialgo>
+ </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/xiao.zhi.jun.687778" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/cc-hsiao/" target="_blank"><img src="images/linkedin.svg" alt="linked in" width="16" height="16"></a>
+            <a href="https://github.com/chihchunhsiao" target="_blank"><img src="images/githubicon.svg" alt="githubicon" width="16" height="16"></a>
+        </div>
+        <p><span id="currentyear"></span></p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/navigation.js"></script>
+</body>
+</html>

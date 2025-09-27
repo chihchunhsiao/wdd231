@@ -16,18 +16,20 @@
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/modal.css">
 
         <!-- JS Here -->
         <script src="scripts/date.js" defer></script>    
         <script src="scripts/navigation.js" defer></script> 
-        <script src="scripts/directory.js" defer></script> 
+        <script src="scripts/join.js" defer></script> 
+        <script src="scripts/modal.js" defer></script>
 
         <!-- Favicon -->
         <link rel="icon" href="hsinchu.ico">
 
         <!-- Social Media Meta -->
-        <meta property="og:title" content="Hsinchu Business Directory">
-        <meta property="og:description" content="Explore Hsinchu City's most comprehensive business directory! Easily search and find the local businesses, restaurants, shops, and professional services you need.">
+        <meta property="og:title" content="Join Hsinchu Chamber of Commerce">
+        <meta property="og:description" content="Join Hsinchu Chamber of Commerce to get more professional supports! Easily search and find needful caurses and events, and professional services you need.">
         <meta property="og:image" content="https://chihchunhsiao.github.io/wdd231/chamber/images/og-image.webp"/>
         <meta property="og:url" content="https://chihchunhsiao.github.io/wdd231/chamber/directory.html">
 
@@ -47,7 +49,65 @@
             </ul>
         </nav>
         <main>
-             <h1>Join Us</h1>
+            <h1>Join Us</h1>
+        <div class="join">
+            <div>
+                
+                <form id="submissionForm" method="GET" action="thanks.html" class="form">
+                    <h2>Membership Application Form</h2>
+                    <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                    <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                    <label for="org-title">Title 
+                        <input type="text" id="org-title" name="organization-title" title="Please enter your job title. It must contain only English letters, hyphens and spaces and must be at least 7 characters." pattern="[A-Za-z\s-{7,}]" required autocomplete="organizational-title">
+                        <span id="error-message"></span></label>
+                    <label>Cell Phone <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+                    <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+                    <label>Organization <input type="text" name="organization" required autocomplete="organizational-name" title="Organization Name"></label>
+                    <label for="bussiness-description">Bussiness Description <textarea name="bussiness-description" title="Your Business Description" rows="3"></textarea></label>
+
+                    <h3>Membership Level</h3>
+                    <label><input class="large-radio" type="radio" name="membership" value="Non-Profit" checked> Non Profit Membership </label>
+                    <label><input class="large-radio" type="radio" name="membership" value="Bronze"> Bronze Membership </label>
+                    <label><input class="large-radio" type="radio" name="membership" value="Silver"> Silver Membership</label>
+                    <label><input class="large-radio" type="radio" name="membership" value="Gold"> Gold Membership</label>
+                    <input type="hidden" id="formLoadTime" name="formLoadTime" value="">
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+            
+
+            <div class="m-container">
+                <h2>Membership Levels</h1>
+                <div class="membership-card-grid">
+
+                    <div class="membership-card" data-id="nonProfit">
+                        <h3>Non Profit Memebership</h3>
+                        <button id="openButton1">Learn More</button>
+                    </div>
+
+                    <div class="membership-card" data-id="bronze">
+                        <h3>Bronze Membership</h3>
+                        <button id="openButton2">Learn More</button>
+                    </div>
+
+                    <div class="membership-card" data-id="silver">
+                        <h3>Silver Membership</h3>
+                        <button id="openButton3">Learn More</button>
+                    </div>
+
+                    <div class="membership-card" data-id="gold">
+                        <h3>Gold Membership</h3>
+                        <button id="openButton4">Learn More</button>
+                    </div>
+
+                </div>
+                <dialog id="dialogBox">
+                <!--     <p>Additional informaiton about this topic</p> -->
+                    <div></div>
+                    <button id="closeButton">Close</button>
+                </dialgo>
+            </div>
+        </div> 
         </main>
 
         <footer>
@@ -59,7 +119,6 @@
                     <p>Email: hisnchucc@email.com</p>
                 </div>
             </section>
-            <section>
                 <div class="social">
                 <a href="https://www.facebook.com/xiao.zhi.jun.687778" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
                 <a href="https://www.linkedin.com/in/cc-hsiao/" target="_blank"><img src="images/linkedin.svg" alt="linked in" width="16" height="16"></a>
@@ -75,5 +134,6 @@
                 </div>
             </section>           
         </footer>
+        <!-- <script src="scripts/join.js" type="module"></script> -->
     </body>
 </html>
