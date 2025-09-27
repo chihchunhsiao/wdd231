@@ -366,21 +366,22 @@ figcaption {
 /* Form */
     .form {
     margin: 1rem 2%;
+    }
   
-    label {
+    .form label {
       display: block;
       font-size: .8rem;
       color: #002333;
       padding-top: .2rem;
     }
-    h3 {
+    .form h3 {
       font-size: .9rem;
       color: #002333;
       margin: 1.5rem 0 .2rem 0;
       border-bottom: 1px solid #eee;
     }
   
-    input[type=text],
+    .form input[type=text],
     textarea,
     input[type=tel],
     input[type=date],
@@ -398,11 +399,11 @@ figcaption {
       width: 250px;
     }
 
-    input:required {border-left-color: #d70000;}
-    input:focus {border-left-color: black; outline:none;}
-    input:required:valid{border-left-color: green;}
+    .form input:required {border-left-color: #d70000;}
+    .form input:focus {border-left-color: black; outline:none;}
+    .form input:required:valid{border-left-color: green;}
   
-    input[type=submit] {
+    .form input[type=submit] {
       border: none;
       text-align: center;
       background-color: #3D405B;
@@ -414,7 +415,7 @@ figcaption {
       -webkit-appearance: none;
       appearance: none;
     }
-    }
+    
 
     .large-radio {
         transform: scale(1.3);
