@@ -481,7 +481,6 @@ figcaption {
         font-size: 1.3rem;
     }
 
-
     .learn-more {
         display: block;
         width: 100%;
@@ -501,9 +500,6 @@ figcaption {
         color:black;
     }
 
-
-
-
     .close-btn {
         color: #aaa;
         float: right;
@@ -520,6 +516,19 @@ figcaption {
         color: #000;
         text-decoration: none;
 
+    }
+
+    /* Thankyou page */
+    #results {
+    display: grid;
+	grid-gap: 0.5rem;
+    margin: 10px;
+    background-color: #002333;
+    color: #FFFFFF;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.1rem;
     }
 
 /* ************** FOOTER ********* */
