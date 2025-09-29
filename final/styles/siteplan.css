@@ -1,0 +1,77 @@
+/* ----- Color Scheme ------
+    --Primary-color: #eddea4 (light yellow);
+    --Secondary-color: #f7a072 (oragne);
+    --Heading-color: #0fa3b1 (green blue);
+    --Paragraph-color: #b5e2fa (light blue);
+    --Background-color: #f9f7f3 (white);
+*/
+
+/* --------- Font --------
+    --Heading-fonts: Roboto, sans-serif;
+    --Text-fonts: Arial, Helvetica, sans-serif;
+ */
+
+* {
+    border: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.0rem;
+}
+
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+header, footer {
+    padding: 20px 0 20px 0; 
+    margin: 10px 0 10px 0;  
+    max-width: 100%; 
+    text-align: center; 
+    background-color: #b5e2fa;
+}
+
+div {
+    margin: 10px 0 10px 0;
+    padding: 10px 20px 10px 20px;
+    background-color: #eddea4;
+}
+
+div.social {
+    background-color: #b5e2fa;
+}
+
+h1 {
+    font-size: 1.5rem;
+    
+}
+
+h2 {
+    font-size: 1.2rem;
+    
+}
+
+p, figcaption {
+    font-size: 1.0rem;
+    padding: 5px;
+}
+
+
+figure {
+    display: grid;
+    place-items: center;
+}
+
+img {
+    height: auto;
+    max-width: 400px;
+}
+
+figcaption {
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
