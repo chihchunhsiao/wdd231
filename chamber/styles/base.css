@@ -416,6 +416,11 @@ figcaption {
       appearance: none;
     }
     
+    .form input[type=submit]:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        background-color: #159A9C;
+        color: black;
+    }
 
     .large-radio {
         transform: scale(1.3);
@@ -427,19 +432,20 @@ figcaption {
 
     /* Open & Close dialog button */
         ::backdrop {
-    background-color:rgba(255, 128, 0, 0.5);
+    background-color:rgba(103, 168, 198, 0.5);
     }
 
     #openButton {
-    background-color: aqua;
+    background-color: #DEEFE7;
     }
 
     #dialogBox {
-    background-color: lavender;
+    background-color: #F5F5F5;
     }
 
     #closeButton {
-    background-color: violet;
+    background-color: #619495;
+    padding: 5px 10px;
     }
 
     /* Membership cards */
@@ -448,6 +454,7 @@ figcaption {
     max-width: 1200px;
     padding: 20px;
     }
+    
     .membership-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -466,18 +473,12 @@ figcaption {
     .membership-card:hover {
         transform: translateY(-10px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        background-color: #DEEFE7;
     }
 
-    .membership-card h2 {
-        color: #007bff;
+    .membership-card h3 {
         margin-top: 0;
-        font-size: 1.8rem;
-    }
-
-    .membership-card p {
-        font-size: 1.2rem;
-        color: #555;
-        font-weight: bold;
+        font-size: 1.3rem;
     }
 
 
@@ -486,7 +487,7 @@ figcaption {
         width: 100%;
         padding: 10px;
         margin-top: 20px;
-        background-color: #007bff;
+        background-color: #002333;
         color: #fff;
         border: none;
         border-radius: 5px;
@@ -496,14 +497,12 @@ figcaption {
     }
 
     .learn-more:hover {
-        background-color: #0056b3;
+        background-color: #159A9C;
+        color:black;
     }
 
 
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(-20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
+
 
     .close-btn {
         color: #aaa;
