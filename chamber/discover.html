@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,21 +15,22 @@
         <!-- Style Sheets Here -->
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/large.css">
-
+        
         <!-- JS Here -->
         <script src="scripts/date.js" defer></script>    
         <script src="scripts/navigation.js" defer></script> 
-        <script src="scripts/directory.js" defer></script> 
+        <script src="scripts/discover.js" defer></script> 
 
         <!-- Favicon -->
         <link rel="icon" href="hsinchu.ico">
 
         <!-- Social Media Meta -->
-        <meta property="og:title" content="Hsinchu Business Directory">
-        <meta property="og:description" content="Explore Hsinchu City's most comprehensive business directory! Easily search and find the local businesses, restaurants, shops, and professional services you need.">
+        <meta property="og:title" content="Discover Hsinchu">
+        <meta property="og:description" content="Explore a comprehensive guide to Hsinchu City's best attractions, including its local scene, must-try specialty foods, and notable museums. The guide is organized and easy for a visitor to navigate.">
         <meta property="og:image" content="https://chihchunhsiao.github.io/wdd231/chamber/images/og-image.webp"/>
-        <meta property="og:url" content="https://chihchunhsiao.github.io/wdd231/chamber/directory.html">
+        <meta property="og:url" content="https://chihchunhsiao.github.io/wdd231/chamber/discover.html">
 
     </head>
     <body>
@@ -47,7 +48,16 @@
             </ul>
         </nav>
         <main>
-             <h1>Discovery</h1>
+            <h1>Discover</h1>  
+            <div id="visit-message" class="visit-message"></div>
+            <article class="discover-grid">
+                <div id="discover-cards" class="discover-cards"></div>
+            </article>   
+            <dialog id="dialogBox-d">
+            <!--     <p>Additional informaiton about this topic</p> -->
+                <div></div>
+                <button id="closeButton-d">Close</button>
+            </dialog> 
         </main>
 
         <footer>
@@ -75,5 +85,6 @@
                 </div>
             </section>           
         </footer>
+        <!-- <script src="scripts/discover.js" type="module"></script>  -->
     </body>
 </html>

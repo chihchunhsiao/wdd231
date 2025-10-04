@@ -531,6 +531,87 @@ figcaption {
     font-size: 1.1rem;
     }
 
+/* ************** Discover ******** */
+
+    /* Welcome message for visitors */
+
+.visit-message {
+    background-color:  #DEEFE7; 
+    color: black;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #002333;
+
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+    /* Discover-cards */
+.discover-cards div {
+    margin: 1rem 8px;
+    border: 1px solid black;
+    background-color: #F5F5F5;
+    border-radius: 2px;
+    width: auto;
+    /* use grid-template-areas */
+    display: grid;
+    grid-template-areas: 
+    
+    "name"
+    "image"
+    "description"   
+    "address"
+    "learnmore"
+    ;
+}
+
+.discover-cards div h2 {
+    /* margin: 10px 10px; */
+    grid-area: name;
+    font-size: 1.2rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.discover-cards div img {
+    width: auto;
+    grid-area: image;
+    justify-self: center;
+    align-self:center;
+}
+
+.discover-cards div h3 {
+    margin: 1rem 10px;
+    grid-area: description;
+    font-size: 1.0rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.discover-cards div p {
+    margin: .8rem 10px;
+    grid-area: address;
+    
+}
+
+.discover-cards div button {
+    margin: 1rem 10px;
+    grid-area: learnmore;
+    background-color: #002333;;
+    color:#FFFFFF;
+    border-radius: 5px;
+}
+
+.discover-cards div button:hover {
+    background-color: #159A9C;
+    color: black;
+}
+
+
+
 /* ************** FOOTER ********* */
 
 footer {

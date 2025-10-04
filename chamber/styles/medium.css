@@ -1,0 +1,53 @@
+@media only screen and (min-width: 32rem) {
+    
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    .hamburger {
+    display: none;
+    }
+
+    .navigation {
+        display: flex;
+        border-bottom: solid 1px #eee;
+        justify-content: right; /* Align content to the right */
+        
+    }
+
+    .navigation ul {
+        display: flex;
+        margin: 0;
+        padding: 0 20px; 
+    }
+
+    .navigation li {
+        margin-left: 30px; /* Control the spacing between each link */
+    }
+    .navigation a {
+        border: none;
+    }
+
+    /* Discover Page */
+    .discover-cards div {
+    border-radius: 2px;
+    /* use grid-template-areas */
+    display: grid;
+    grid-template-areas: 
+    
+    "image name"
+    "image description"
+    "image address"
+    "learnmore learnmore"    
+    ;
+    }
+
+    .discover-cards div img {
+    margin-left: 10px;
+    justify-self: center;
+    align-self:center;
+    }
+}

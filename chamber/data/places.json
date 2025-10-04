@@ -1,0 +1,60 @@
+{
+    "places" : [
+    {
+      "name": "Hsinchu City God Temple Night Market",
+      "description": "An essential Hsinchu experience. The temple is one of the highest-ranking and most historic in Taiwan, but the main draw is the bustling food market surrounding it. You can taste local specialties there.",
+      "address": "No. 75, Zhongshan Rd, North Dist, Hsinchu City",
+      "cost": "Free (Temple entry)",
+      "image": "hsinchu-city-god-temple.webp"
+    },
+    {
+      "name": "Leofoo Village Theme Park",
+      "description": "A major theme park in Hsinchu County, offering a unique combination of thrilling rides (roller coasters like the Screaming Condor) and a large safari park where you can take tours to see animals like giraffes and zebras.",
+      "address": "No. 60, Gongzigou, Guanxi Township, Hsinchu County",
+      "cost": "Varies; Full ticket NT$1,399 (often cheaper online or for specific promotions).",
+      "image": "leofoo-village.webp"
+    },
+    {
+      "name": "17-Kilometer Coastline Scenic Area",
+      "description": "A scenic, paved bike path stretching for 17 kilometers along the coast. Ideal for cycling, running, or a sunset stroll. Key spots include the Nanliao Fishing Harbor and the photo-famous Fish Scale Ladder.",
+      "address": "No. 275, Dongda Rd Sec. 4, Hsinchu City",
+      "cost": "Free (Bike rental costs apply)",
+      "image": "17-kilometer.webp"
+    },
+    {
+      "name": "Neiwan Old Street",
+      "description": "A charming old street in the mountainous Hengshan Township. Known for its well-preserved traditional wooden architecture, Hakka culture, and local snacks like wild ginger flower dumplings.",
+      "address": "Neiwan Village, Hengshan Township, Hsinchu County",
+      "cost": "Free",
+      "image": "neiwan-old-street.webp"
+    },
+    {
+      "name": "Hsinchu Zoo",
+      "description": "Taiwan's oldest existing zoo, thoroughly renovated to be a modern, friendly park focused on animal welfare. It's a compact and easily accessible attraction, perfect for families, located right within Hsinchu Park.",
+      "address": "No. 66, Shipin Rd, East Dist, Hsinchu City",
+      "cost": "NT$50 (Full ticket)",
+      "image": "hsinchu-zoo.webp"
+    },
+    {
+      "name": "Xiangshan Wetlands Crab Watching Trail",
+      "description": "A protected coastal wetland area famous for its abundant wildlife. The unique curved wooden trail allows visitors to walk out during low tide to observe thousands of fiddler crabs and mudskippers, especially beautiful at sunset.",
+      "address": "No. 17, Ln. 500, Sec. 3, Xibin Rd, Xiangshan Dist, Hsinchu City",
+      "cost": "Free",
+      "image": "xiangshan-wetlands.webp"
+    },
+    {
+      "name": "Hsinchu Glass Museum",
+      "description": "Hsinchu is a historic center for glass craftsmanship. The museum displays exquisite glass artwork and often hosts temporary exhibitions. It is located near the zoo inside Hsinchu Park.",
+      "address": "No. 2, Dongda Rd Sec. 1, North Dist, Hsinchu City",
+      "cost": "NT$20 - NT$50 (Full ticket)",
+      "image": "hsinchu-glass-museum.webp"
+    },
+    {
+      "name": "TSMC Museum of Innovation",
+      "description": "For those interested in technology, this modern museum offers a free, engaging look into the world's most advanced semiconductor manufacturing and the history of TSMC. **(Requires online reservation)**.",
+      "address": "No. 1, Lixing 7th Rd, Hsinchu Science Park, East Dist, Hsinchu City",
+      "cost": "Free (Requires online reservation)",
+      "image": "tsmc-museum.webp"
+    }
+  ]
+}
