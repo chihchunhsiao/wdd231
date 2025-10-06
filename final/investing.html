@@ -4,13 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title> Chun's Wealth Journal Site Plan</title>
-        <meta name="description" content="The Chun's Wealth Journal Site Plan includes the site purpose, the target audience, branding information, and a style guide for the course website project.">
+        <meta name="description" content="The Chun's Wealth Journal provides data of market indices, articles of personal finance and investment, and relevant information and books to users who are interested in developing personal finance and investment.">
         <meta name="author" content="Chih Chun Hsiao">
 
         <!-- Google Font Here -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
         <!-- Style Sheets Here -->       
         <link rel="stylesheet" href="styles/normalize.css">
@@ -21,17 +21,18 @@
         <!-- JS Here -->
         <script src="scripts/date.js" defer></script>    
         <script src="scripts/navigation.js" defer></script> 
+        <script src="scripts/market-index.js" defer></script>
+        <script src="scripts/tsmc.js" defer></script>
+
 
         <!-- Favicon -->
         <link rel="icon" href="cwj.ico">
 
         <!-- Social Media Meta -->
-        <meta property="og:title" content="Chih Chun's website">
-        <meta property="og:description" content="Learn Chih-Chun's story, and how she created personal value through BYUI's Web Computer Programming online course">
+        <meta property="og:title" content="The Chun's Wealth Journal website">
+        <meta property="og:description" content="Learn with Chih-Chun, and created your personal value through the Chun's Wealth Journal website.">
         <meta property="og:image" content="https://drive.google.com/file/d/1w9YsM8gqUDUPZfXTURSFbBkbNphjNFBi/view?usp=sharing"/>
         <meta property="og:url" content="https://drive.google.com/file/d/1w9YsM8gqUDUPZfXTURSFbBkbNphjNFBi/view?usp=sharing">
-
-
 
     </head>
     <body>
@@ -48,8 +49,38 @@
         </ul>
         </nav>
         <main> 
-       
+            <h1>Selected Stock Information</h1>
+    
+            <div class="market-dashboard">
+                <h2>TSMC's Latest EOD Data</h2>
+                
+                <table id="stock-table">
+                    <thead>
+                        <tr>
+                            <th>Code / Name</th>
+                            <th>Latest Closing Price</th>
+                            <th>Rise/Fall</th>
+                            <th>Data Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-body">
+                        </tbody>
+                </table>
+
+                <p id="status-message" class="status">Loading...</p>
+                
+            </div>   
             
+            <div class="container">
+                <h2>TSMC Annual Financial Statements (2014-2024)</h2>
+                <p></p>
+                
+                <div id="table-container">
+                    <p>Loading...</p>
+                    
+                </div>
+                <p>(*2)</p>
+            </div>
             
         </main>
         
@@ -57,13 +88,29 @@
         
         
         <footer>
-            <div class="social">
+            <div class="footer-content">
+                <div>
+                    <p>Data Resources: </p>
+                    <p>(*1) TSMC's Lastest EOD Data: <a href="https://marketstack.com">Marketstack API</a></p>
+                    <p>Please note: This data is not real-time data. </p>
+                    <p>Data is upadated every 24 hours.</p>
+                    <p>(*2) TSMC Annual Financial Statements: <a href="https://investor.tsmc.com/english/annual-reports">TSMC</a></p>
+                </div>
+                <div class="social">
                 <a href="https://www.facebook.com/xiao.zhi.jun.687778" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
                 <a href="https://www.linkedin.com/in/cc-hsiao/" target="_blank"><img src="images/linkedin.svg" alt="linked in" width="16" height="16"></a>
                 <a href="https://github.com/chihchunhsiao" target="_blank"><img src="images/githubicon.svg" alt="githubicon" width="16" height="16"></a>
+                </div>
+                <div>
+                    <a href="">Video Link</a>
+                    <p><span id="currentyear"></span></p>
+                    <p><span id="lastModified"></span></p>
+                </div>
+                
+
             </div>
-            <p><span id="currentyear"></span></p>
-            <p><span id="lastModified"></span></p>
+            
+            
         </footer>
         
     </body>

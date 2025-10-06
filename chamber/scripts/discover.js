@@ -141,10 +141,10 @@ function displayVisitMessage() {
 
             if (daysDifference === 1) {
                 // less than one day, display 'day'
-                message = `You last visited 1 day ago.`;
+                message = `Your last visit was 1 day ago.`;
             } else {
                 // more than one day, display 'days'
-                message = `You last visited ${daysDifference} days ago.`;
+                message = `Your last visit was ${daysDifference} days ago.`;
             }
         }
     }
