@@ -5,9 +5,9 @@ const ACCESS_KEY = "63ce24ce7800fd1b49a1067306b3c721";
 
 // 1-2. get data of symbol 2330.XTAI: TSMC
 
-const BATCH_SYMBOLS = "2330.XTAI";
+const TSMC_SYMBOL = "2330.XTAI";
 
-const API_URL = `https://api.marketstack.com/v1/eod?access_key=${ACCESS_KEY}&symbols=${BATCH_SYMBOLS}&limit=1`;
+const API_URL = `https://api.marketstack.com/v1/eod?access_key=${ACCESS_KEY}&symbols=${TSMC_SYMBOL}&limit=1`;
 
 // Cache key setting
 const CACHE_KEY = 'stock_dashboard_data';
@@ -16,7 +16,7 @@ const CACHE_EXPIRY = 24 * 60 * 60 * 1000; // 24 hrs' micro secs
 const dataBody = document.getElementById('data-body');
 const statusElement = document.getElementById('status-message');
 
-// 標的名稱對應表 (Marketstack 只提供代號，需自行對應)
+// Target name correspondence table (Marketstack only provides code names)
 const SYMBOL_NAMES = {
     "2330.XTAI": "TSMC",
 };
@@ -30,55 +30,50 @@ const formatNumber = (num, decimals = 2) => {
 };
 
 /**
- * main function：獲取並渲染數據 (帶有快取檢查)
+ * main function：fetch and render data (with cache checked)
  */
 async function fetchAndRenderData() {
-    // 檢查 Key
-    if (ACCESS_KEY === "YOUR_MARKETSTACK_API_KEY" || ACCESS_KEY === "") {
-        statusElement.className = 'status error';
-        statusElement.textContent = '錯誤：請在 script.js 中設定您的 ACCESS_KEY。';
-        return;
-    }
     
     const cachedItem = JSON.parse(localStorage.getItem(CACHE_KEY));
     const now = Date.now();
 
-    // 1. 檢查快取
-    if (cachedItem && (now - cachedItem.timestamp < CACHE_EXPIRY)) {
+    // 1. check cache
+        if (cachedItem && (now - cachedItem.timestamp < CACHE_EXPIRY)) {
         statusElement.className = 'status';
         statusElement.textContent = `Data from cache, last updated on：${new Date(cachedItem.timestamp).toLocaleTimeString('zh-US')} (*1)`;
         renderTable(cachedItem.data);
-        return; // **使用快取，結束函數，不發送 API 請求**
+        return; // **use cache data, end the funciton and not sent the API request**
     }
 
-    // 2. 快取過期或不存在，發送 API 請求
-    statusElement.textContent = '快取過期，正在發送 Marketstack API 請求... (消耗 1 次額度)';
+    // 2. cache expired or didn't exist, send an API request
+    statusElement.textContent = 'Cache expired, sending Marketstack API request... ';
     
     try {
         const response = await fetch(API_URL);
         const data = await response.json();
+        console.log(data);
 
         if (data.error) {
             statusElement.className = 'status error';
-            statusElement.textContent = `Marketstack 錯誤：${data.error.message} (Code: ${data.error.code})。請檢查您的 API Key 和額度。`;
+            statusElement.textContent = `Marketstack：${data.error.message} (Code: ${data.error.code}). Check your API Key and quota.`;
             return;
         }
 
         const rawDataArray = data.data;
 
         if (rawDataArray && rawDataArray.length > 0) {
-            // 3. 儲存新數據到快取
+            // 3. store new data to the cache
             localStorage.setItem(CACHE_KEY, JSON.stringify({
                 data: rawDataArray,
                 timestamp: now
             }));
             
             statusElement.className = 'status';
-            statusElement.textContent = `數據更新成功！來源 Marketstack API，時間：${new Date(now).toLocaleTimeString('zh-US')}`;
+            statusElement.textContent = `Upadated time: ${new Date(now).toLocaleTimeString('zh-US')}`;
             renderTable(rawDataArray);
         } else {
             statusElement.className = 'status error';
-            statusElement.textContent = '錯誤：API 成功返回，但沒有找到數據。';
+            statusElement.textContent = 'Error：API return successfully, but no data.';
         }
 
     } catch (error) {
@@ -153,6 +148,6 @@ function createTableRow(item) {
     return row;
 }
 
-// 啟動數據獲取流程
+// Start function
 fetchAndRenderData();
 
