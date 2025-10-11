@@ -418,6 +418,7 @@ figure img {
     border-radius: 8px;
     padding: 30px;
     margin: 50px 100px;   
+    text-align: left;
     }
 
     .dialogBox-f p {
@@ -520,39 +521,8 @@ figure img {
     background-color:rgba(103, 168, 198, 0.5);
     }
 
-    #openButton {
-    background-color: #DEEFE7;
-    }
-
-    #dialogBox {
-    background-color: #F5F5F5;
-    }
-
-    #closeButton {
-    background-color: #619495;
-    padding: 5px 10px;
-    }
-
     /* Membership cards */
-    
-    .membership-card-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px; /* 卡片間距 */
-        transition: background-color 2s ease-in-out; /* 可選：讓背景顏色變化平滑 */
-    
-    }
 
-    @keyframes card-fade-in {
-        0% {
-            opacity: 0;
-            transform: translateY(20px); /* 略微向上移動 */
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
     .m-container {
         text-align: center;
         max-width: 1300px;
@@ -586,8 +556,7 @@ figure img {
         font-size: 1.3rem;
     }
 
-    .see-more {
-        
+    .see-more {       
         width: 100%;
         padding: 10px;
         margin-top: 10px;
@@ -619,10 +588,6 @@ figure img {
         cursor: pointer;
     }
 
-    /* .close-btn:hover,.close-btn:focus {
-        color: #000;
-        text-decoration: none;
-    } */
 
     /* Thankyou page */
     #results {
