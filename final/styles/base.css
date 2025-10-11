@@ -79,6 +79,7 @@ header span {
 .navigation {
     display: none;
     background-color: #0fa3b1;
+    color:black;
 }
 
 .navigation.show {
@@ -107,9 +108,6 @@ header span {
 
 }
 
-.navigation {
-    color:black;
-}
 .navigation li.current {
     background-color: #eddea4;  
 }
@@ -201,25 +199,6 @@ figure img {
     transition: background-color 0.3s ease;
 }
 
-/* Hover effect for interactivity */
-.market-news-list li:hover {
-    background-color: #eddea4;
-    cursor: pointer;
-}
-
-/* Styling for the bolded headline (strong tag) */
-.market-news-list li strong {
-    color: #003366; /* Dark blue for emphasis */
-    font-weight: 700;
-    display: inline-block;
-    margin-right: 5px;
-}
-
-/* Adjustments for the last item */
-.market-news-list li:last-child {
-    border-bottom: none;
-}
-
 /* ---recommended books--- */
 .spotlight {
     display: flex;
@@ -239,7 +218,7 @@ figure img {
   color: #FFFFFF;
 }
 
-.book-cards section {
+#book-cards section {
     padding: 20px;
     margin: 5px;
     color: black;
@@ -272,22 +251,21 @@ figure img {
     margin-bottom: 20px;
 }
 
-#stock-table th, #stock-table td {
+#stock-table th {
+    background-color: #eddea4;
+    font-weight: 600;
+    font-size: 1.1rem;
     padding: 12px 15px;
     border-bottom: 1px solid #eee;
     text-align: center;
 }
 
-#stock-table th {
-    background-color: #eddea4;
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
 #stock-table td {
     text-align: center;
     background-color: #f9f7f3;
-    
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
 }
 
 /* 漲跌顏色定義 (臺灣習慣：紅漲綠跌) */
@@ -327,19 +305,10 @@ figure img {
     
 }
 
-
 .financial-table {
     width: 100%;
-    border-collapse: collapse; /* 邊框合併 */
-    margin-top: 20px;
-    
-}
-
-.financial-table th, .financial-table td {
-    padding: 12px 15px;
-    text-align: right;
-    border-bottom: 1px solid #ddd;
-    font-size: 0.8rem;
+    border-collapse: collapse; 
+    margin-top: 20px;    
 }
 
 .financial-table th {
@@ -347,14 +316,18 @@ figure img {
     text-align: right;
     position: sticky; /* 表頭固定 */
     top: 0;
+    padding: 12px 15px;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.8rem;
 }
 
 .financial-table td {
     background-color: #f9f7f3;
-}
-
-.financial-table tr:hover {
-    background-color: #e9e9e9;
+    padding: 12px 15px;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.8rem;
 }
 
 .container p {
@@ -568,7 +541,6 @@ figure img {
     text-align: center;
     max-width: 1300px;
     padding: 20px;
-
     }
     
     .membership-card-grid {
@@ -635,11 +607,9 @@ figure img {
         cursor: pointer;
     }
 
-    .close-btn:hover,
-    .close-btn:focus {
+    .close-btn:hover,.close-btn:focus {
         color: #000;
         text-decoration: none;
-
     }
 
     /* Thankyou page */
