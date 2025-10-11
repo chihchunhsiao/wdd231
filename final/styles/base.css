@@ -431,7 +431,7 @@ figure img {
     }
 
      /* Learnmore button */
-    .learnmore-btn {
+    .learnmore-btn, .see-more {
         display: block;
         width: 80%;
         padding: 10px;
@@ -514,9 +514,6 @@ figure img {
         transform: scale(1.3);
         margin-top: 10px; 
     }
-    #timestamp {
-        display:none; 
-    }
 
     /* Open & Close dialog button */
     ::backdrop {
@@ -537,16 +534,30 @@ figure img {
     }
 
     /* Membership cards */
-    .m-container {
-    text-align: center;
-    max-width: 1300px;
-    padding: 20px;
-    }
     
     .membership-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px; /* 卡片間距 */
+        transition: background-color 2s ease-in-out; /* 可選：讓背景顏色變化平滑 */
+    
+    }
+
+    @keyframes card-fade-in {
+        0% {
+            opacity: 0;
+            transform: translateY(20px); /* 略微向上移動 */
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .m-container {
+        text-align: center;
+        max-width: 1300px;
+        padding: 20px;
+        transition:card-fade-in;
     }
 
     div.membership-card  {
@@ -558,9 +569,10 @@ figure img {
         border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         padding: 30px;
-        text-align: left;
+        text-align: center;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         margin:10px;
+
     }
 
     .membership-card:hover {
@@ -575,7 +587,7 @@ figure img {
     }
 
     .see-more {
-        /* display: block; */
+        
         width: 100%;
         padding: 10px;
         margin-top: 10px;
@@ -583,7 +595,7 @@ figure img {
         color: black;
         border: none;
         border-radius: 5px;
-        font-size: 1rem;
+        font-size: 1.0rem;
         cursor: pointer;
         transition: background-color 0.3s ease;
         font-family: "Lato", sans-serif;
@@ -599,7 +611,7 @@ figure img {
     .close-btn {
         color: #aaa;
         float: right;
-        font-size: 28px;
+        font-size: 1.2rem;
         font-weight: bold;
         position: absolute;
         top: 10px;
@@ -607,10 +619,10 @@ figure img {
         cursor: pointer;
     }
 
-    .close-btn:hover,.close-btn:focus {
+    /* .close-btn:hover,.close-btn:focus {
         color: #000;
         text-decoration: none;
-    }
+    } */
 
     /* Thankyou page */
     #results {
