@@ -279,16 +279,10 @@ figure img {
     font-weight: bold;
 }
 
-.error {
-    color: #c0392b;
-    font-weight: bold;
-}
-
-.disclaimer {
-    font-size: 0.75em;
-    color: black;
+.status {
     text-align: left;
-    margin-top: 15px;
+    font-size: .9rem;
+    color: #555;
 }
 
 /* TSMC form  */
