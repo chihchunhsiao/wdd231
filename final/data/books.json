@@ -1,0 +1,139 @@
+{
+    "books": [
+    {
+        "No": 1,
+        "name": "The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness",
+        "author": "Morgan Housel",
+        "review": "Success in finance is less about complex knowledge and more about **behavior and mindset**. Emphasizes that psychological factors and discipline are key to long-term success.",
+        "link": "https://www.amazon.com/Psychology-Money-Timeless-lessons-happiness/dp/0857197681",
+        "image": "psychology-of-money.webp",
+        "price" : "Paperback $14.03"
+    },
+    {
+        "No": 2,
+        "name": "Rich Dad Poor Dad: What the Rich Teach Their Kids About Money—That the Poor and Middle Class Do Not!",
+        "author": "Robert Kiyosaki",
+        "review": "A **foundational mindset book**. Distinguishes between **assets and liabilities**, advocating for building assets that generate **passive income**.",
+        "link": "https://www.amazon.com/Rich-Dad-Poor-Teach-Middle/dp/1612680194",
+        "image": "richdaypoorday.webp",
+        "price" : "Paperback $11.51"
+    },
+    {
+        "No": 3,
+        "name": "A Random Walk Down Wall Street: The Time-Tested Strategy for Successful Investing",
+        "author": "Burton Malkiel",
+        "review": "A classic promoting **index fund investing**. Argues that for most investors, low-cost index funds are the best long-term strategy as active trading rarely beats the market.",
+        "link": "https://www.amazon.com/Random-Walk-Down-Wall-Street/dp/0393330338",
+        "image": "random-walk.webp",
+        "price" : "Paperback $11.43"
+    },
+    {
+        "No": 4,
+        "name": "The Intelligent Investor: The Definitive Book on Value Investing",
+        "author": "Benjamin Graham",
+        "review": "The **bible of value investing**. Introduces the concepts of \"**Margin of Safety**\" and \"**Mr. Market**,\" guiding readers toward rational, long-term investment.",
+        "link": "https://www.amazon.com/Intelligent-Investor-Hardcover-Benjamin-Graham/dp/B0CBQ18KDB",
+        "image": "intelligent-investor.webp",
+        "price" : "Paperback $20.49"
+    },
+    {
+        "No": 5,
+        "name": "The Little Book of Common Sense Investing: The Only Way to Guarantee Your Fair Share of Stock Market Returns",
+        "author": "John C. Bogle",
+        "review": "The **father of index funds** explains the superiority of **passive investing**. Stresses the importance of keeping costs low and maintaining discipline.",
+        "link": "https://www.amazon.com/Little-Book-Common-Sense-Investing/dp/1119404509",
+        "image": "the-littlebook.webp",
+        "price" : "Hardcover $14.69"
+    },
+    {
+        "No": 6,
+        "name": "Secrets of the Millionaire Mind: Mastering the Inner Game of Wealth",
+        "author": "T. Harv Eker",
+        "review": "Focuses on changing your **\"money blueprint\"** and thought patterns. Outlines **17 ways rich people think and act differently** to help readers reprogram their subconscious for wealth.",
+        "link": "https://www.amazon.com/Secrets-Millionaire-Mind-Mastering-Wealth/dp/0060763280",
+        "image": "secretsof-millionairemind.webp",
+        "price" : "Hardcover $16.00"
+    },
+    {
+        "No": 7,
+        "name": "The Most Important Thing: Uncommon Sense for the Thoughtful Investor",
+        "author": "Howard Marks",
+        "review": "Offers deep insights into **second-level thinking**, understanding **market cycles**, managing risk, and discerning market emotions.",
+        "link": "https://www.amazon.com/most-important-thing-Howard-Marks/dp/9353022797",
+        "image": "most-important-thing.webp",
+        "price" : "Paperback $13.45"
+    },
+    {
+        "No": 8,
+        "name": "Just Keep Buying: Proven Ways to Save Money and Build Your Wealth",
+        "author": "Nick Maggiulli",
+        "review": "Uses a data-driven approach to prove that a strategy of **consistently and periodically investing** (DCA) leads to better long-term results than trying to time the market.",
+        "link": "https://www.amazon.com/Just-Keep-Buying-Proven-wealth/dp/0857199714",
+        "image": "just-keep-buying.webp",
+        "price" : "Paperback $10.53"
+    },
+    {
+        "No": 9,
+        "name": "The Snowball: Warren Buffett and the Business of Life",
+        "author": "Alice Schroeder",
+        "review": "The **most comprehensive biography of Warren Buffett**. Details his investment philosophy, business decisions, and how his character forged his financial legacy.",
+        "link": "https://www.amazon.com/Snowball-Warren-Buffett-Business-Life/dp/0553384619",
+        "image": "snowball.webp",
+        "price" : "Paperback $13.42"
+    },
+    {
+        "No": 10,
+        "name": "Poor Charlie's Almanack: The Essential Wit and Wisdom of Charles T. Munger",
+        "author": "Charlie Munger",
+        "review": "Insights from Buffett's partner. Emphasizes **multidisciplinary mental models** and avoiding human psychological biases in decision-making.",
+        "link": "https://www.amazon.com/Poor-Charlies-Almanack-Essential-Charles/dp/1953953239",
+        "image": "poor-charlies.webp",
+        "price" : "Hardcover $23.17"
+    },
+    {
+        "No": 11,
+        "name": "Your Money or Your Life: 9 Steps to Transforming Your Relationship with Money and Achieving Financial Independence",
+        "author": "Vicki Robin and Joe Dominguez",
+        "review": "A classic of the **FIRE (Financial Independence, Retire Early)** movement. Teaches you to value your time in terms of \"life energy\" to redefine spending and saving.",
+        "link": "https://www.amazon.com/Your-Money-Life-Transforming-Relationship/dp/0143115766",
+        "image": "yourmoney.webp",
+        "price" : "Paperback $11.25"
+    },
+    {
+        "No": 12,
+        "name": "Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets",
+        "author": "Nassim Nicholas Taleb",
+        "review": "Stresses the massive role of **luck and chance** in the financial markets and advises preparing for unpredictable \"Black Swan\" events.",
+        "link": "https://www.amazon.com/Fooled-Randomness-Hidden-Markets-Incerto/dp/0812975219",
+        "image": "random-walk.webp",
+        "price" : "Paperback $14.79"
+    },
+    {
+        "No": 13,
+        "name": "The Four Pillars of Investing: Lessons for Building a Winning Portfolio",
+        "author": "William J. Bernstein",
+        "review": "A practical guide to building a profitable portfolio based on four key concepts: **Theory, History, Psychology, and Business**.",
+        "link": "https://www.amazon.com/Four-Pillars-Investing-Building-Portfolio/dp/1932378014",
+        "image": "thefour-pillars.webp",
+        "price" : "Audio CD $45.00"
+    },
+    {
+        "No": 14,
+        "name": "The Simple Path to Wealth: Your road map to financial independence and a rich, free life",
+        "author": "J.L. Collins",
+        "review": "A highly accessible guide for beginners promoting an **extremely simple, low-cost index fund investment** strategy for achieving financial freedom.",
+        "link": "https://www.amazon.com/Simple-Path-Wealth-financial-independence/dp/1533667926",
+        "image": "simple-path.webp",
+        "price" : "Paperback $33.85"
+    },
+    {
+        "No": 15,
+        "name": "The Total Money Makeover: A Proven Plan for Financial Fitness",
+        "author": "Dave Ramsey",
+        "review": "A no-nonsense, step-by-step guide focused on **debt elimination and savings**. Uses the \"Baby Steps\" system to build financial fitness.",
+        "link": "https://www.amazon.com/Total-Money-Makeover-Financial-Fitness/dp/0785289089",
+        "image": "total-money.webp",
+        "price" : "Hardcover $14.50"
+    }
+    ]
+}

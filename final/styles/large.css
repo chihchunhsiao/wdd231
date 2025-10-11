@@ -35,6 +35,59 @@
         border: none;
     }
 
+    /* --------About-------------- */
+    .book-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+    }
+
+
+
+    /* ----------Finance---------- */
+
+    .finance-cards {
+    /* use grid-template-areas */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr; 
+    }
+
+    .finance-cards div {
+    /* use grid-template-areas */
+    display: grid;
+    grid-template-areas: 
+    
+    "name name"
+    "image author"
+    "image review"   
+    "image learnmore"    
+    ;
+    }
+
+    .finance-cards div img {
+    margin-top: 15px;
+    justify-self: center;
+    }
+
+    .finance-cards div button {
+        height: 50px;
+        margin-bottom: 5px;
+    }
+
+    /* ----contact ----- */
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .member-grid .member-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
     /* footer */
         .footer-content {
         display: grid;    
