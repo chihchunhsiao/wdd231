@@ -237,6 +237,20 @@ figure img {
 }
 
 /* ************Investing************* */
+    /* Welcome message for visitors */
+
+.visit-message {
+    background-color:  #b5e2fa; 
+    color: black;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #002333;
+
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
 /* EOD data */
 
 .market-dashboard {
@@ -516,6 +530,7 @@ figure img {
         max-width: 1300px;
         padding: 20px;
         transition:card-fade-in;
+        gap:20px;
     }
 
     div.membership-card  {
@@ -529,7 +544,7 @@ figure img {
         padding: 30px;
         text-align: center;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-        margin:10px;
+        margin:20px;
 
     }
 

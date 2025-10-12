@@ -15,36 +15,36 @@ const financialData = {
     ]
 };
 
-// 輔助函數：根據欄位名稱進行格式化
+// Auxiliary function: format according to field name
 function formatFinancialValue(key, value) {
-    if (typeof value !== 'number') return value; // 非數字直接返回
+    if (typeof value !== 'number') return value; 
 
-    // 判斷是否為 Year 或 EPS，需要特殊處理
+    // Determine whether it is Year or EPS, which requires special processing
     if (key === 'Year') {
-        return value.toFixed(0); // 年度不需要小數點
+        return value.toFixed(0); // No decimal point is required for the year
     }
     if (key === 'EPS') {
-        // EPS 保留兩位小數，不帶千分位
+        // EPS Keep two decimal places and no thousandths
         return value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     }
 
-    // 其他大數字 (營收、淨利、股東權益) 使用千分位並捨棄小數
+    // For other large figures (revenue, net profit, shareholders' equity), use thousandths and discard decimals
     return value.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
 }
 
-function generateFinancialTable() {
+export function generateFinancialTable() {
     const dataArray = financialData.tsmc;
     const container = document.getElementById('table-container');
 
     if (!dataArray || dataArray.length === 0) {
-        container.innerHTML = '<p>無法載入財務數據。</p>';
+        container.innerHTML = '<p>Unable to load financial data。</p>';
         return;
     }
 
     const table = document.createElement('table');
     table.classList.add('financial-table');
     
-    // 3. 創建 Table Header
+    // 3. Create Table Header
     const thead = document.createElement('thead');
     const headerRow = document.createElement('tr');
     
@@ -58,17 +58,17 @@ function generateFinancialTable() {
     thead.appendChild(headerRow);
     table.appendChild(thead);
     
-    // 4. 創建 Table Body (使用 Object.entries() 迭代 key 和 value)
+    // 4. Create Table Body (Use Object.entries() iterate key & value)
     const tbody = document.createElement('tbody');
     
     dataArray.forEach(item => {
         const dataRow = document.createElement('tr');
         
-        // 🎯 關鍵修正：使用 Object.entries 獲取 Key 和 Value
+        // 🎯 Use Object.entries to get Key & Value
         Object.entries(item).forEach(([key, value]) => {
             const td = document.createElement('td');
             
-            // 使用修正後的格式化函數
+            // Use the corrected formatting function
             td.textContent = formatFinancialValue(key, value);
             
             dataRow.appendChild(td);
@@ -79,10 +79,8 @@ function generateFinancialTable() {
     
     table.appendChild(tbody);
 
-    // 5. 插入 Table
+    // 5. insert Table
     container.innerHTML = ''; 
     container.appendChild(table);
 }
 
-// 網頁載入完成後執行函數
-document.addEventListener('DOMContentLoaded', generateFinancialTable);

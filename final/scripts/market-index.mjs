@@ -32,7 +32,7 @@ const formatNumber = (num, decimals = 2) => {
 /**
  * main function：fetch and render data (with cache checked)
  */
-async function fetchAndRenderData() {
+export async function fetchAndRenderData() {
     
     const cachedItem = JSON.parse(localStorage.getItem(CACHE_KEY));
     const now = Date.now();
@@ -148,6 +148,5 @@ function createTableRow(item) {
     return row;
 }
 
-// Start function
-fetchAndRenderData();
+
 
