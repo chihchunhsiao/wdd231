@@ -79,18 +79,18 @@ export async function fetchAndRenderData() {
     } catch (error) {
         console.error('Fetch Error:', error);
         statusElement.className = 'status error';
-        statusElement.textContent = `連線或網路錯誤：${error.message}`;
+        statusElement.textContent = `Connection or network error：${error.message}`;
     }
 }
 
 /**
- * 渲染數據到 HTML 表格
- * @param {Array} dataArray - 從 API 或快取獲取的數據陣列
+ * Rendering data into an HTML table
+ * @param {Array} dataArray - An array of data retrieved from an API or cache
  */
 function renderTable(dataArray) {
-    dataBody.innerHTML = ''; // 清空舊數據
+    dataBody.innerHTML = ''; // Clear old data
 
-    // 確保標的找到，並按照我們想要的順序渲染
+    // Make sure the objects are found
     const orderedSymbols = ["2330.XTAI"];
     
     orderedSymbols.forEach(symbol => {
@@ -100,25 +100,25 @@ function renderTable(dataArray) {
             const row = createTableRow(item);
             dataBody.appendChild(row);
         } else {
-             // 如果找不到該標的，顯示錯誤行
+             // If the target cannot be found, an error line is displayed.
             const errorRow = document.createElement('tr');
-            errorRow.innerHTML = `<td colspan="4" class="error">${symbol} 數據遺失</td>`;
+            errorRow.innerHTML = `<td colspan="4" class="error">${symbol} data lost</td>`;
             dataBody.appendChild(errorRow);
         }
     });
 }
 
 /**
- * 創建單一行表格元素
- * @param {Object} item - 單一標的的數據物件
+ * Create a single-row table element
+ * @param {Object} item - Single target data object
  * @returns {HTMLTableRowElement}
  */
 function createTableRow(item) {
     const row = document.createElement('tr');
     
-    // 計算漲跌邏輯
+    // Calculating the logic of rise and fall
     const closePrice = item.close;
-    // 使用 adj_close 作為前一日收盤價
+    // Use adj_close as the previous day's closing price
     const previousClose = item.adj_close || item.open; 
     
     let change = 0;
@@ -135,7 +135,7 @@ function createTableRow(item) {
     row.innerHTML = `
         <td>
             <strong>${item.symbol}</strong>
-            <br>${SYMBOL_NAMES[item.symbol] || '未知名稱'}
+            <br>${SYMBOL_NAMES[item.symbol] || 'Unknown name'}
         </td>
         <td class="${priceClass}">${formatNumber(closePrice, 2)}</td>
         <td class="${priceClass}">
